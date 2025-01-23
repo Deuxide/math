@@ -15,10 +15,19 @@ h1 {
 
 }
 
+@media(max-width: 400px) {
+    h1 {
+        font-size: 4rem;
+    }
+}
+
 .card-wrapping {
 
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     gap: 2.5rem;
 
     margin-bottom: auto;
