@@ -1,0 +1,77 @@
+:root {
+    --color1: #798ad6;
+    --color2: #6acf6a;
+    --color4: #4059AD;
+    --color3: #479b47;
+}
+
+h1 {
+    
+    justify-self: flex-start;
+
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: 500;
+
+}
+
+.card-wrapping {
+
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+
+    margin-bottom: auto;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 15rem;
+    height: 17rem;
+
+    border: 2px solid var(--color1);
+    border-radius: 1rem;
+
+    color: var(--colors);
+    transition: 0.3s;
+
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.card:hover {
+    cursor: pointer;
+    background-color: var(--color1);
+    transform: translateY(-7px);
+}
+
+.card:nth-child(2) {
+    border-color: var(--color2);
+}
+.card:nth-child(3) {
+    border-color: var(--color4);
+}
+.card:nth-child(4) {
+    border-color: var(--color3);
+}
+
+.card:nth-child(2):hover {
+    background-color: var(--color2);
+}
+.card:nth-child(3):hover {
+    background-color: var(--color4);
+}
+.card:nth-child(4):hover {
+    background-color: var(--color3);
+}
+
+.card svg {
+    width: 4rem;
+    fill: var(--colors);
+    margin-bottom: 1rem;
+}
