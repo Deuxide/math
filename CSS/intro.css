@@ -1,8 +1,14 @@
 :root {
-    --color1: #798ad6;
-    --color2: #6acf6a;
-    --color4: #4059AD;
-    --color3: #479b47;
+    --color1: #14488b;
+    --color2: #008b8b;
+    --color4: #c4ced4;
+    --color3: #d50032;
+}
+
+.titledesc {
+
+    padding: 10rem;
+
 }
 
 h1 {
@@ -12,6 +18,7 @@ h1 {
     text-transform: uppercase;
     font-size: 5rem;
     font-weight: 500;
+    margin: 1rem ;
 
 }
 
@@ -21,6 +28,7 @@ h1 {
     }
 }
 
+
 .card-wrapping {
 
     display: flex;
@@ -29,8 +37,11 @@ h1 {
     align-items: center;
     justify-content: center;
     gap: 2.5rem;
+    width: 100%;
+    padding: 10rem;
 
     margin-bottom: auto;
+    background-color: var(--colorss);
 
 }
 
@@ -40,13 +51,13 @@ h1 {
     align-items: center;
     justify-content: center;
 
-    width: 15rem;
-    height: 17rem;
+    width: 16rem;
+    height: 20rem;
 
     border: 3px solid var(--color1);
     border-radius: 1rem;
 
-    color: var(--colors);
+    color: var(--color1);
     transition: 0.3s;
 
     font-size: 2rem;
@@ -56,31 +67,38 @@ h1 {
 .card:hover {
     cursor: pointer;
     background-color: var(--color1);
+    color: var(--colorss);
     transform: translateY(-7px);
 }
 
 .card:nth-child(2) {
+    color: var(--color2);
     border-color: var(--color2);
 }
 .card:nth-child(3) {
+    color: var(--color4);
     border-color: var(--color4);
 }
 .card:nth-child(4) {
+    color: var(--color3);
     border-color: var(--color3);
 }
 
 .card:nth-child(2):hover {
     background-color: var(--color2);
+    color: var(--colorss);
 }
 .card:nth-child(3):hover {
     background-color: var(--color4);
+    color: var(--colorss);
 }
 .card:nth-child(4):hover {
     background-color: var(--color3);
+    color: var(--colorss);
 }
 
 .card svg {
     width: 4rem;
-    fill: var(--colors);
+    fill: var(--colorss);
     margin-bottom: 1rem;
 }
